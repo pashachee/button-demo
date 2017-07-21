@@ -102,13 +102,20 @@ class App extends Component {
             <Button variant="primary" size="lg" fullwidth>Full Width</Button>,
           ]}
         </Controls>
-
+        <h3>Link and Text</h3>
+        <Controls className="demo-controls" layout="wide">
+          {[
+            <Button href="https://wikipedia.org/" variant="warning" iconAfter=":book:" outlined>This is a link looks like a button</Button>,
+            <Button href="https://wikipedia.org/" variant="link">This is a link</Button>,
+            <Button href="https://wikipedia.org/" variant="text">This is a link looks like a plain text</Button>,
+          ]}
+        </Controls>
         <h3>Other</h3>
         <Controls className="demo-controls" layout="wide">
           {[
             <CustomButtonWithOwnStyle iconBefore="warn" onClick={this.handleClick}>Very Implrtant Custom Button!</CustomButtonWithOwnStyle>,
             <CallToActionButton iconBefore=":fire:" iconAfter=":fire:">Call To Action</CallToActionButton>,
-            <button type="button" className="Button Button--primary Button--lg"><span className="Button__label">Out of CSS Modules</span></button>
+            <button type="button" className="Button Button--primary Button--lg"><span className="Button__label">Out of CSS Modules</span></button>,
           ]}
         </Controls>
       </div>
