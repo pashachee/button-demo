@@ -1,0 +1,32 @@
+:global {
+  html {
+    background-color: #000;
+  }
+  html, body {
+    min-height: 100%;
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+  }
+
+  body {
+    margin: 0;
+    padding: 20px 20px 50px;
+    font-family: Helvetica, Arial, sans-serif;
+    background: linear-gradient(#f1f1f1, #fafafa);
+  }
+
+  .demo-controls {
+    margin-bottom: 20px;
+  }
+
+  .demo-info {
+    font-size: 18px;
+    color: #444;
+  }
+
+  h1, h2, h3 {
+    margin-top: 30px;
+  }
+}

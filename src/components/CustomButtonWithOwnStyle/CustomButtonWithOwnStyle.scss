@@ -1,0 +1,5 @@
+@import "../Button/ButtonMixins";
+
+.CustomButtonWithOwnStyle {
+  @include button-variant(#fff, orangered);
+}

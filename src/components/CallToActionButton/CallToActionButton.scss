@@ -1,0 +1,25 @@
+@import "../Button/ButtonMixins";
+
+$call-to-action-bg: #338de9;
+
+.CallToActionButton {
+  height: 46px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  border-radius: 23px;
+  animation: glowing 1.5s infinite;
+  @include button-variant(#fff, $call-to-action-bg);
+}
+
+@keyframes glowing {
+  0% {
+    @include button-variant(#fff, $call-to-action-bg);
+  }
+  50% {
+    @include button-variant(#fff, #e94d33);
+  }
+  100% {
+    @include button-variant(#fff, $call-to-action-bg);
+  }
+}

@@ -1,0 +1,46 @@
+.Icon {
+  display: inline-block;
+}
+
+%Icon--round {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-0.5px);
+  -webkit-font-smoothing: antialiased;
+}
+
+.Icon--help {
+  @extend %Icon--round;
+
+  &::before {
+    content: "?";
+  }
+}
+
+.Icon--info {
+  @extend %Icon--round;
+
+  &::before {
+    content: "i";
+  }
+}
+
+.Icon--warn {
+  @extend %Icon--round;
+
+  &::before {
+    content: "!";
+  }
+}
+
+.Icon--emoji {
+  vertical-align: middle;
+  font-size: 16px;
+  color: #000;
+}
