@@ -1,13 +1,14 @@
 :global {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   html {
     background-color: #000;
   }
+
   html, body {
     min-height: 100%;
-
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
   }
 
   body {
