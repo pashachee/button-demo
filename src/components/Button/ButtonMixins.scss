@@ -81,8 +81,8 @@
 
   &:disabled {
     opacity: .7;
-    box-shadow: 0 0 1px rgba(0,0,0,0.01);
-}
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+  }
 
   :global {
     .Button {
