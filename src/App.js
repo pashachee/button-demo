@@ -106,6 +106,7 @@ class App extends Component {
         <Controls className="demo-controls" layout="wide">
           {[
             <Button href="https://wikipedia.org/" variant="warning" iconAfter=":book:" outlined>This is a link looks like a button</Button>,
+            <Button href="https://wikipedia.org/" variant="link" iconAfter=":link:" target="_blank">Link with icon</Button>,
             <Button href="https://wikipedia.org/" variant="link">This is a link</Button>,
             <Button href="https://wikipedia.org/" variant="text">This is a link looks like a plain text</Button>,
           ]}
