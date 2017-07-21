@@ -11,6 +11,10 @@ const CallToActionButton = ({ children, ...attributes }) => {
 CallToActionButton.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.bool,
+    PropTypes.element,
+    PropTypes.array,
+    PropTypes.object,
+    PropTypes.string,
     PropTypes.arrayOf(
       PropTypes.element,
     )
